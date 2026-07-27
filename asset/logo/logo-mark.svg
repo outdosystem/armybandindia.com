@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' role='img' aria-label='Royal Bagpipe Band Shere Punjab crest'>
+<circle cx='256' cy='256' r='230' fill='#182217' stroke='#b08d3b' stroke-width='14'/>
+<circle cx='256' cy='256' r='202' fill='none' stroke='#e9e0c7' stroke-opacity='.4' stroke-width='3'/>
+<path d='M181 168 256 128l75 40v108c0 58-31 106-75 131-44-25-75-73-75-131Z' fill='#354a32' stroke='#b08d3b' stroke-width='8'/>
+<path d='M190 220h132v58H190z' fill='#772b26'/>
+<path d='m148 337 62-155m154 155-62-155' fill='none' stroke='#b08d3b' stroke-width='14' stroke-linecap='round'/>
+<path d='M204 119h104l-12 34h-80Zm3-2-15-30 31 17 13-37 20 32 20-32 13 37 31-17-15 30Z' fill='#b08d3b'/>
+<text x='256' y='265' text-anchor='middle' fill='#f8f4e9' font-family='Georgia,serif' font-size='78' font-weight='700'>RB</text>
+<text x='256' y='309' text-anchor='middle' fill='#d8c892' font-family='Arial,sans-serif' font-size='18' font-weight='700' letter-spacing='6'>SHERE PUNJAB</text>
+</svg>

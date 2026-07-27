@@ -1,0 +1,194 @@
+﻿/* ==========================================================
+   Motion, reveal, hover, and loading effects
+   ========================================================== */
+
+@keyframes loaderPulse {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scrollDot {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+}
+
+@keyframes ribbonScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes softFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(34px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes haloPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(176, 141, 59, 0.18); }
+  50% { box-shadow: 0 0 0 16px rgba(176, 141, 59, 0); }
+}
+
+.hero .eyebrow,
+.hero h1,
+.hero-lead,
+.hero-actions {
+  opacity: 0;
+  animation: heroFadeUp 850ms both;
+}
+
+.hero .eyebrow { animation-delay: 260ms; }
+.hero h1 { animation-delay: 420ms; }
+.hero-lead { animation-delay: 590ms; }
+.hero-actions { animation-delay: 740ms; }
+
+.hero-badge-card {
+  animation: softFloat 4.5s ease-in-out infinite;
+}
+
+.floating-whatsapp {
+  animation: haloPulse 2.4s ease-in-out infinite;
+}
+
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 0;
+  transition: opacity 750ms ease, transform 750ms cubic-bezier(.2, .65, .3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up { transform: translateY(42px); }
+.reveal-left { transform: translateX(-42px); }
+.reveal-right { transform: translateX(42px); }
+.reveal-scale { transform: scale(0.93); }
+
+.reveal-up.is-visible,
+.reveal-left.is-visible,
+.reveal-right.is-visible,
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+[data-delay='1'] { transition-delay: 100ms; }
+[data-delay='2'] { transition-delay: 200ms; }
+[data-delay='3'] { transition-delay: 300ms; }
+[data-delay='4'] { transition-delay: 400ms; }
+[data-delay='5'] { transition-delay: 500ms; }
+
+.hover-lift {
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hover-lift:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-8px);
+}
+
+.image-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-shine::before {
+  position: absolute;
+  top: 0;
+  left: -120%;
+  z-index: 4;
+  width: 45%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-18deg);
+  transition: left 800ms ease;
+  pointer-events: none;
+}
+
+.image-shine:hover::before {
+  left: 140%;
+}
+
+.ripple {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.ripple::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  content: "";
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  transform: translate(-50%, -50%);
+  transition: width 450ms ease, height 450ms ease;
+}
+
+.ripple:active::after {
+  width: 340px;
+  height: 340px;
+}
+
+.progress-line {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(24, 34, 23, 0.09);
+}
+
+.progress-line span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--color-gold-600), var(--color-gold-300));
+  transition: width 1.3s cubic-bezier(.2, .65, .3, 1);
+}
+
+.progress-line.is-visible span {
+  width: var(--progress-value, 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .eyebrow,
+  .hero h1,
+  .hero-lead,
+  .hero-actions,
+  .reveal-up,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+}

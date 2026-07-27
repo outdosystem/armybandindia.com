@@ -1,0 +1,554 @@
+﻿/* ==========================================================
+   Responsive layout rules
+   ========================================================== */
+
+@media (min-width: 1400px) {
+  .container-xl {
+    max-width: 1380px;
+  }
+
+  .hero-content {
+    max-width: 870px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  :root {
+    --header-height: 82px;
+  }
+
+  .navbar-brand img {
+    width: 205px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    font-size: 0.69rem;
+  }
+
+  .nav-book-btn {
+    margin-left: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .hero-badge-card {
+    right: 3vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section-space {
+    padding: 100px 0;
+  }
+
+  .navbar-collapse {
+    max-height: calc(100vh - 105px);
+    margin-top: 12px;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid rgba(176, 141, 59, 0.18);
+    border-radius: 18px;
+    background: rgba(14, 21, 13, 0.99);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .navbar-nav {
+    gap: 3px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px 10px !important;
+    font-size: 0.78rem;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .dropdown-menu {
+    margin-bottom: 8px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.045);
+    box-shadow: none;
+  }
+
+  .nav-book-btn {
+    width: 100%;
+    margin: 12px 0 0;
+  }
+
+  .hero-badge-card {
+    display: none;
+  }
+
+  .image-stack {
+    min-height: 560px;
+  }
+
+  .signature-panel-content {
+    max-width: 600px;
+    padding: 70px 58px;
+  }
+
+  .process-timeline::before {
+    right: 7%;
+    left: 7%;
+  }
+
+  .gallery-grid {
+    columns: 3 260px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --header-height: 76px;
+  }
+
+  .section-space {
+    padding: 88px 0;
+  }
+
+  .section-space-sm {
+    padding: 65px 0;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .navbar-brand img {
+    width: 215px;
+  }
+
+  .hero .container {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
+
+  .hero {
+    min-height: 850px;
+    background-image: linear-gradient(90deg, rgba(14, 21, 13, 0.95), rgba(14, 21, 13, 0.65)), url('../images/hero-royal-ensemble.jpg');
+    background-position: 63% center;
+  }
+
+  .inner-hero {
+    min-height: 560px;
+  }
+
+  .inner-hero .container {
+    padding-top: 190px;
+    padding-bottom: 72px;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .image-stack {
+    min-height: 650px;
+    margin-top: 50px;
+  }
+
+  .media-frame img {
+    min-height: 480px;
+  }
+
+  .stat-item {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    text-align: center;
+  }
+
+  .stats-panel .col-6:nth-last-child(-n+2) .stat-item {
+    border-bottom: 0;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  .process-step {
+    padding: 24px;
+    border: 1px solid rgba(24, 34, 23, 0.08);
+    border-radius: var(--radius-md);
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .bg-ivory .process-step {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .signature-panel::after {
+    background: linear-gradient(90deg, rgba(14, 21, 13, 0.96), rgba(14, 21, 13, 0.7));
+  }
+
+  .signature-panel-content {
+    max-width: 100%;
+  }
+
+  .gallery-grid {
+    columns: 2 240px;
+  }
+
+  .booking-summary {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .footer-main {
+    padding: 75px 0 50px;
+  }
+
+  .footer-bottom,
+  .footer-bottom-links {
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: clamp(2.65rem, 14vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: clamp(2.1rem, 10vw, 3.35rem);
+  }
+
+  .section-space {
+    padding: 72px 0;
+  }
+
+  .section-space-sm {
+    padding: 55px 0;
+  }
+
+  .navbar {
+    min-height: 74px;
+  }
+
+  .navbar-brand img {
+    width: 184px;
+  }
+
+  .hero {
+    min-height: 780px;
+    background-position: 66% center;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero .container {
+    padding-top: 135px;
+    padding-bottom: 85px;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions,
+  .cta-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn-royal,
+  .hero-actions .btn-outline-royal,
+  .cta-actions .btn-royal,
+  .cta-actions .btn-outline-royal,
+  .cta-actions .btn-light-royal {
+    width: 100%;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .inner-hero {
+    min-height: 520px;
+  }
+
+  .inner-hero .container {
+    padding-top: 160px;
+    padding-bottom: 62px;
+  }
+
+  .inner-hero h1 {
+    font-size: clamp(2.65rem, 13vw, 4.3rem);
+  }
+
+  .brand-ribbon-track {
+    animation-duration: 22s;
+  }
+
+  .image-stack {
+    min-height: 500px;
+  }
+
+  .image-stack .image-primary {
+    right: 12%;
+    width: 88%;
+  }
+
+  .image-stack .image-secondary {
+    width: 48%;
+    height: 36%;
+  }
+
+  .image-stack-badge {
+    width: 112px;
+    height: 112px;
+    padding: 12px;
+  }
+
+  .image-stack-badge strong {
+    font-size: 2rem;
+  }
+
+  .media-frame img {
+    min-height: 400px;
+  }
+
+  .media-frame-caption {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .luxury-card,
+  .testimonial-card {
+    padding: 28px;
+  }
+
+  .band-card {
+    min-height: 440px;
+  }
+
+  .band-card-content {
+    padding: 28px;
+  }
+
+  .stats-panel .col-6:nth-last-child(-n+2) .stat-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  }
+
+  .stats-panel .col-6:last-child .stat-item {
+    border-bottom: 0;
+  }
+
+  .stat-item {
+    padding: 30px 18px;
+  }
+
+  .signature-panel {
+    min-height: 560px;
+  }
+
+  .signature-panel-content {
+    padding: 60px 30px;
+  }
+
+  .gallery-grid {
+    columns: 1;
+  }
+
+  .gallery-caption {
+    opacity: 1;
+    transform: none;
+  }
+
+  .testimonial-carousel .carousel-item {
+    min-height: 480px;
+    padding: 72px 13%;
+  }
+
+  .form-shell,
+  .contact-panel,
+  .legal-shell {
+    padding: 30px 24px;
+  }
+
+  .contact-panel {
+    min-height: auto;
+  }
+
+  .cta-royal {
+    padding: 72px 0;
+  }
+
+  .cta-royal::after {
+    inset: 9px;
+  }
+
+  .footer-logo {
+    width: 235px;
+  }
+
+  .floating-contact {
+    right: 14px;
+    bottom: 82px;
+  }
+
+  .floating-contact a,
+  .scroll-top {
+    width: 46px;
+    height: 46px;
+  }
+
+  .scroll-top {
+    right: 14px;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container,
+  .container-fluid {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .row.g-5 {
+    --bs-gutter-x: 1.5rem;
+  }
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(32px);
+  }
+
+  .eyebrow {
+    gap: 9px;
+    letter-spacing: 0.14em;
+  }
+
+  .eyebrow::before {
+    width: 24px;
+  }
+
+  .navbar-brand img {
+    width: 168px;
+  }
+
+  .hero {
+    min-height: 740px;
+    background-position: 61% center;
+  }
+
+  .hero .container {
+    padding-top: 120px;
+  }
+
+  .breadcrumb {
+    row-gap: 3px;
+    padding: 8px 11px;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+  }
+
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.45rem;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0.45rem;
+  }
+
+  .status-breadcrumb .breadcrumb {
+    margin-bottom: 28px;
+  }
+
+  .image-stack {
+    min-height: 420px;
+  }
+
+  .image-stack .image-secondary {
+    border-width: 5px;
+  }
+
+  .image-stack-badge {
+    top: 4%;
+    right: 0;
+    width: 96px;
+    height: 96px;
+  }
+
+  .image-stack-badge span {
+    font-size: 0.55rem;
+  }
+
+  .service-card-image,
+  .blog-card-image {
+    height: 225px;
+  }
+
+  .process-step {
+    padding: 22px 18px;
+  }
+
+  .testimonial-carousel .carousel-item {
+    min-height: 520px;
+    padding: 66px 15%;
+  }
+
+  .contact-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .status-page {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero {
+    min-height: 920px;
+  }
+
+  .hero .container {
+    padding-top: 220px;
+  }
+
+  .inner-hero {
+    min-height: 680px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
