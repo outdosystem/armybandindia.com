@@ -1,0 +1,11 @@
+{
+  "name": "The Royal Bagpipe Band Shere Punjab",
+  "short_name": "Royal Bagpipe Band",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#182217",
+  "theme_color": "#182217",
+  "icons": [
+    { "src": "asset/logo/logo-mark.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
