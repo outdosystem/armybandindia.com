@@ -255,7 +255,7 @@ p:last-child {
 
 .loader-crest {
   width: 96px;
-  animation: loaderPulse 1.35s ease-in-out infinite;
+  animation: loaderPulse  10.35s ease-in-out infinite;
 }
 
 /* Buttons */
@@ -744,7 +744,7 @@ body[data-page='vip-events'] .inner-hero { background-image: linear-gradient(90d
 body[data-page='gallery'] .inner-hero,
 body[data-page='testimonials'] .inner-hero { background-image: linear-gradient(90deg, rgba(14, 21, 13, .94), rgba(14, 21, 13, .35)), url('../images/world-street-performance.jpg'); }
 body[data-page='contact'] .inner-hero,
-body[data-page='book-now'] .inner-hero { background-image: linear-gradient(90deg, rgba(14, 21, 13, .94), rgba(14, 21, 13, .4)), url('../images/band-leader-portrait.jpg'); background-position: center 38%; }
+body[data-page='book-now'] .inner-hero { background-image: linear-gradient(90deg, rgba(14, 21, 13, .94), rgba(14, 21, 13, .4)), url('../images/band-gallery-46.jpg'); background-position: center 87%; }
 body[data-page='army-band'] .inner-hero,
 body[data-page='military-pipe-band'] .inner-hero,
 body[data-page='republic-day-events'] .inner-hero,
@@ -859,22 +859,22 @@ body[data-page='blog'] .inner-hero { background-image: linear-gradient(90deg, rg
 
 .image-stack .image-primary {
   inset: 0 17% 8% 0;
-  width: 83%;
+  width: 100%;
   height: 92%;
 }
 
 .image-stack .image-secondary {
-  right: 0;
+  right: -48px;
   bottom: 0;
-  width: 47%;
+  width: 35%;
   height: 42%;
   border: 8px solid var(--color-ivory);
 }
 
 .image-stack-badge {
   position: absolute;
-  top: 8%;
-  right: 3%;
+  top: -8%;
+  right: -8%;
   z-index: 3;
   display: grid;
   width: 150px;
@@ -1676,8 +1676,8 @@ textarea.form-control {
 
 .contact-panel {
   position: relative;
-  height: 100%;
-  min-height: 560px;
+  /* height: 100%; */
+  /* min-height: 560px; */
   overflow: hidden;
   padding: 50px;
   color: rgba(255, 255, 255, 0.72);
@@ -1747,7 +1747,7 @@ textarea.form-control {
   padding: 90px 0;
   color: rgba(255, 255, 255, 0.74);
   background-color: var(--color-navy-950);
-  background-image: linear-gradient(90deg, rgba(14, 21, 13, 0.97), rgba(14, 21, 13, 0.67)), url('../images/hero-navy-ensemble.jpg');
+  background-image: linear-gradient(90deg, rgba(14, 21, 13, 0.87), rgba(14, 21, 13, 0.50)), url('../images/hero-navy-ensemble.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -2131,3 +2131,11 @@ textarea.form-control {
 }
 
 .article-narrow { max-width: 900px; }
+
+/* ----------------------------------------------------------------------------------------- */
+                                       /* coustom css  */                               
+/* ----------------------------------------------------------------------------------------- */
+
+.counter-center{
+  text-align: center !important;
+}

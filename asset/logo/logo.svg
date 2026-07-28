@@ -1,6 +1,6 @@
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1180 290' role='img' aria-label='The Royal Bagpipe Band Shere Punjab'>
 <rect width='1180' height='290' rx='24' fill='#182217'/>
-<image href='logo-mark.svg' x='14' y='14' width='262' height='262'/>
+<image href='logo-mark.png' x='14' y='14' width='262' height='262'/>
 <text x='315' y='96' fill='#e9e0c7' font-family='Georgia,serif' font-size='38' letter-spacing='7'>THE ROYAL</text>
 <text x='315' y='171' fill='#ffffff' font-family='Georgia,serif' font-size='65' font-weight='700' letter-spacing='2'>BAGPIPE BAND</text>
 <path d='M317 195h776' stroke='#b08d3b' stroke-width='3'/>
